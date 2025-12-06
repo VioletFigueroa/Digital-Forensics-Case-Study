@@ -8,6 +8,15 @@
 
 ---
 
+**How to view artifacts:** Read `Project 10 - Forensics Report and Documentation.md` (or .docx) for full narrative; screenshots live under `images/`; detailed notes in `notes/`.
+
+**Result snapshot:** Rebuilt insider data-theft timeline, tied artifacts to responsible users, and documented legal-ready evidence.
+
+**Quick review:**
+- Docs: `Project 10 - Forensics Report and Documentation.md/.docx`
+- Evidence: `images/` (screenshots), `notes/` (forensic notes)
+- Start with: Timeline section in the report, then the registry/log screenshots
+
 ## Overview
 Comprehensive digital forensics and incident response investigation into the theft of a proprietary Szechuan sauce recipe and intellectual property exfiltration. This merged project combines two distinct forensics case studies demonstrating real-world investigative methodologies suitable for legal proceedings and corporate incident response.
 
@@ -53,6 +62,12 @@ Comprehensive digital forensics and incident response investigation into the the
 - Bash scripting - Forensic automation and log processing
 - PCAP file analysis - Network packet capture examination
 - Chain of custody documentation - Legal evidence preservation
+
+**Data handling:** Evidence is lab-sourced; hashes provided in notes for integrity. No customer data stored.
+
+## Lessons Learned
+- Chain-of-custody discipline keeps findings court-ready.
+- Registry, log, and memory triage together close attribution gaps fast.
 
 ## Files Included
 - [Project 10 - Forensics Report and Documentation.md](Project%2010%20-%20Forensics%20Report%20and%20Documentation.md) - Full investigation report with findings
