@@ -1,5 +1,14 @@
 # The Case of the Stolen Szechuan Sauce
 
+![GitHub last commit](https://img.shields.io/github/last-commit/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
+![License](https://img.shields.io/badge/license-Educational-blue?style=flat-square)
+![Release](https://img.shields.io/github/v/release/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
+
+**Quick Links:** [Documentation](README.md) | [Security Policy](SECURITY.md) | [Contributing](CONTRIBUTING.md) | [Release](https://github.com/VioletFigueroa/Digital-Forensics-Case-Study/releases/tag/v1.0.0)
+
+---
+
 ## Overview
 Comprehensive digital forensics and incident response investigation into the theft of a proprietary Szechuan sauce recipe and intellectual property exfiltration. This merged project combines two distinct forensics case studies demonstrating real-world investigative methodologies suitable for legal proceedings and corporate incident response.
 
