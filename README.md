@@ -18,7 +18,7 @@
 - Start with: Timeline section in the report, then the registry/log screenshots
 
 ## Overview
-Comprehensive digital forensics and incident response investigation into the theft of a proprietary Szechuan sauce recipe and intellectual property exfiltration. This merged project combines two distinct forensics case studies demonstrating real-world investigative methodologies suitable for legal proceedings and corporate incident response.
+Comprehensive digital forensics and incident response investigation into the theft of a proprietary Szechuan sauce recipe and intellectual property exfiltration. This merged project combines two distinct forensics case studies demonstrating real-world investigative methodologies suitable for corporate incident response.
 
 ## Objectives
 - Identify insider threats responsible for data theft
@@ -39,7 +39,7 @@ Comprehensive digital forensics and incident response investigation into the the
 - All evidence mounted as read-only to prevent modification
 - Comprehensive logging of all analysis activities
 
-**Forensic Tools and Techniques:**
+**Forensic Tools and Techniques:**egal proceedings and 
 - Registry Explorer for registry hive analysis
 - Event Viewer for log review and timeline correlation
 - Volatility 3 for memory forensics
