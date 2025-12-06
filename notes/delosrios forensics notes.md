@@ -1,7 +1,3 @@
----
-draft: true
-tags: ["notes", "investigation"]
----
 
 1. ~~What’s the Operating System of the Server?~~
 2. What’s the Operating System of the Desktop?
@@ -36,7 +32,9 @@ tags: ["notes", "investigation"]
        1. Windows Registry for Desktop machine
 
 **WINDOWS.INFO**
-![Windows Registry value showing ProductName as Windows Server 2012 R2 Standard Evaluation](/images/projects/stolen-szechuan-sauce/image1.png)
+
+![Windows Registry value showing ProductName as Windows Server 2012 R2 Standard Evaluation](../images/image1.png)
+
 Noteworthy details
 
 * OS desktop version
@@ -45,49 +43,62 @@ Noteworthy details
 * Volatility identifies OS version as **Windows 10**
 
 **WINDOWS.PSLIST**
-**![System event log showing significant security-related activity during forensic analysis](/images/projects/stolen-szechuan-sauce/image2.png)**
-**![Additional forensic evidence showing system configuration changes during attack](/images/projects/stolen-szechuan-sauce/image3.png)**
+
+![System event log showing significant security-related activity during forensic analysis](../images/image2.png)
+
+![Additional forensic evidence showing system configuration changes during attack](../images/image3.png)
+
 Noteworthy details
 
 * Unusual process: coreupdate.exe with PID 8324
 * A google search reveals **coreupdater.exe** **is not recognized as a typical windows process**. In fact, the process name is associated with the hash for a malicious file on VirusTotal
 
-![Security log entries documenting attack progression and attacker actions](/images/projects/stolen-szechuan-sauce/image4.png)
+![Security log entries documenting attack progression and attacker actions](../images/image4.png)
 
 * VirusTotal states this malware is associated with IP 203.78.103.109
 * Parent process with PPID 4008 is not listed and is presumably no longer running, which is unusual behavior
 
 **WINDOWS.PROCDUMP**
-![Network forensics results showing traffic patterns from compromised system](/images/projects/stolen-szechuan-sauce/image5.png)
+
+![Network forensics results showing traffic patterns from compromised system](../images/image5.png)
+
 Noteworthy details
 
 * Procdump **fails to generate file** for coreupdater.exe
 
 **WINDOWS.CMDLINE**
-**![Log analysis showing system events relevant to incident timeline reconstruction](/images/projects/stolen-szechuan-sauce/image6.png)**
-![Detailed attack chain visualization showing attacker progression through network](/images/projects/stolen-szechuan-sauce/image7.png)
+
+![Log analysis showing system events relevant to incident timeline reconstruction](../images/image6.png)
+
+![Detailed attack chain visualization showing attacker progression through network](../images/image7.png)
+
 Noteworthy details
 
 * Investigating coreupdater.exe further, it seems the **process was exited** by the time the image of the desktop was generated
 * Explains why procdump does not generate results when attempting to export the file from the image
 
 **WINDOWS.NETSTAT**
-**![Failed login attempts displayed in Event Viewer showing brute force activity](/images/projects/stolen-szechuan-sauce/image8.png)**
+
+![Failed login attempts displayed in Event Viewer showing brute force activity](../images/image8.png)
+
 Noteworthy details
 
 * A foreign address establishes a connection with the desktop twice, each time to a different port
   * ForeignAddr \- **203.78.103.109 port 443**
   * LocalPorts \- 50875 & 50972
-  * Good time to confirm that Desktop’s IP is 10.42.85.115
+  * Good time to confirm that Desktop's IP is 10.42.85.115
 * Furthermore, the IP is associated with malicious activity on VirusTotal
 
-![Multiple security events showing coordinated failed authentication attempts on systems](/images/projects/stolen-szechuan-sauce/image9.png)
+![Multiple security events showing coordinated failed authentication attempts on systems](../images/image9.png)
 
 * This IP is also associated with coreupdater.exe on VirusTotal, further suggesting that it is the malicious process on the machine
 
 **WINDOWS.MALFIND**
-![Security event logs showing multiple failed authentication attempts and lateral movement indicators](/images/projects/stolen-szechuan-sauce/image10.png)
-![Wireshark packet capture showing network traffic analysis for incident investigation](/images/projects/stolen-szechuan-sauce/image11.png)
+
+![Security event logs showing multiple failed authentication attempts and lateral movement indicators](../images/image10.png)
+
+![Wireshark packet capture showing network traffic analysis for incident investigation](../images/image11.png)
+
 Noteworthy details
 
 * Both these processes demonstrate assembly code patterns associated with injected code

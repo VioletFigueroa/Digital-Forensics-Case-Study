@@ -1,16 +1,3 @@
----
-title: "The Case of the Stolen Szechuan Sauce and Delosrios Forensics"
-date: 2025-08-20
-layout: "single"
-lastmod: 2025-11-30
-draft: false
-featured: true
-tags: ["DFIR", "forensics", "investigation", "malware analysis", "incident response", "cybersecurity"]
-categories: ["Digital Forensics", "Incident Response"]
-summary: "Merged documentation of two comprehensive digital forensics investigations into corporate espionage and insider threats."
-weight: 3
-showInHome: true
----
 
 # The Case of the Stolen Szechuan Sauce and Delosrios Forensics
 
@@ -171,5 +158,3 @@ The suspect used CCleaner and file deletion to cover tracks. This reinforced the
 ---
 
 **Related Skills:** Digital Forensics, Incident Response, Memory Analysis, Network Forensics, Evidence Collection, Legal Documentation
-
-[← Back to Projects](/projects/)
