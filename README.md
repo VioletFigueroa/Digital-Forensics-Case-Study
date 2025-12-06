@@ -3,9 +3,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
 ![License](https://img.shields.io/badge/license-Educational-blue?style=flat-square)
-![Release](https://img.shields.io/github/v/release/VioletFigueroa/Digital-Forensics-Case-Study?style=flat-square)
 
-**Quick Links:** [Documentation](README.md) | [Security Policy](SECURITY.md) | [Contributing](CONTRIBUTING.md) | [Release](https://github.com/VioletFigueroa/Digital-Forensics-Case-Study/releases/tag/v1.0.0)
+**Quick Links:** [Documentation](README.md) | [Security Policy](SECURITY.md) | [Contributing](CONTRIBUTING.md)
 
 ---
 
